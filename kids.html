@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/mystylesorder.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Kathy's Cakes</a>
+  <a href="order.html">Order Now</a>
+  <a href="story.html">Our Story</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+  </a>
+</div>
+<div class="contain">
+<h1>Our Menu</h1>
+<h2>Choice of Milk, White Chocolate, or Marble: Includes one color and one topping.</h2>
+<figure><div class="toptwo"></div><br>
+<figcaption>Fig.1 Options of milk, white or marble
+</figure>
+<p><br>Price: 20.00$</p>
+<div class="contain">
+    <p>Please fill out the form to place an order</p>
+      <form id="test_form" class="contact-form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
+        <div class="first-name">
+          <label for="firstname" class="label_input_wrap">First Name:</label>
+          <input type="text" name="req_firstname" id="firstname" placeholder="ex. John"/>
+            </div>
+      <div class="last-name">
+          <label for="lastname" class="label_input_wrap">Flavor:</label>
+            <input type="text" name="req_lastname" id="lastname" placeholder="Last name"/>
+            </div>
+              <div class="email">
+                  <label for="email" class="label_input_wrap">Amount:</label>
+                    <input type="number" name="req_email" id="email"
+                    placeholder="Amount" />
+                  </div>
+                  <div class="telephone">
+                    <label for="telephone" class="label_input_wrap">Telephone:</label>
+                    <input type="tel"  name="telephone" id="telephone" placeholder="555-555-555"/>
+                  </div>
+                  <div class="comments">
+                    <label for="comments" class="label_input_wrap">Comments or Place Order: </label>
+                    <textarea name="comments" id="comments" cols="55" rows="5" placeholder="Your Comments Goes Here"></textarea>
+                  </div>
+                <div class="submit">
+                    <input type="submit" value="Send me a message!"/>
+                  </div><br><br><br><br><br><br><br><br>
+  </form>
+</div>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</body>
+<footer>
+  <h4>Kathy's Cakes inc. /Maya Multimedia LLC</h4><br>
+</footer>
+</html>

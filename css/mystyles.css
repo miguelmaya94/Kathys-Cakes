@@ -1,0 +1,165 @@
+
+body {
+  margin: 0;
+  left:0;
+  font-family: 'Raleway', sans-serif;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  width: 100%;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: green;
+}
+
+.topnav a.active {
+  background-color:skyblue;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+
+}
+.topimg{
+  background-image: url('../images/gingerbread-1560711_1920.jpg');
+  float: left;
+  width: 100%;
+  height: 300px;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 4.5rem;
+  text-align: left;
+  text-emphasis: bold;
+  background-size: cover;
+  margin-top: 50px;
+
+}
+.topimg p{
+
+font-size: 1rem;
+max-width: 400px;
+color:white;
+background-color: rgba(0,0,0,0.55);
+
+}
+.imgorder a{
+  background-image: url('../images/cake-pops-693646_1920.jpg');
+  float: left;
+  width: 100%;
+  height: 400px;
+  background-size:  cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: 4.5rem;
+  text-align: left;
+  text-emphasis: bold;
+text-decoration: none;
+margin-bottom: 100px;
+  decoration: ;
+  margin-top: 20px;
+    text-decoration-line: none;
+}
+
+footer {
+text-align: center;
+padding: 3px;
+background-color:skyblue;
+color: white;
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display:none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    background-color: white;
+    background-image: url('../images/mickey.jpg');
+    width: 5px;
+    height: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: fixed;}
+  .topnav.responsive .icon {
+    position: fixed;
+
+
+  }
+  .topnav.responsive a {
+
+    display: block;
+    text-align: left;
+    text-align: left;
+    float: right;
+    background-repeat: no-repeat;
+  }
+
+
+  .topimg{
+    background-image: url('../images/gingerbread-1560711_1920.jpg');
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 3.5rem;
+    text-align: left;
+    text-emphasis: bold;
+    top:0;
+    margin: 0;
+    margin-top: 50px;
+
+  }
+  .imgorder{
+    background-image: url('../images/cake-pops-693646_1920.jpg');
+    float: left;
+    width: 100%;
+    height: 300px;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 4.5rem;
+    text-align: left;
+    text-emphasis: bold;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin-top: 50px;
+
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: skyblue;
+  color: white;
+    bottom: 0px;
+    font-size: 1.2rem;
+}
+}
