@@ -6,6 +6,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav>
@@ -18,17 +19,104 @@
   </a>
 </div>
 </nav>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="images/slideone.png" style="width:100%">
+  <div class="text">Kathy's Cakes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="images/Screen Shot 2021-09-13 at 6.09.18 PM.png" style="width:100%">
+  <div class="text">Kathy's Cakes</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="images/slidethree.png" style="width:100%">
+  <div class="text">Kathy's Cakes</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+
+
+
 <section>
-<div class="topimg">Help us create the newest CakePops.<br><article><p>
-
-Kathy's Cakes is proud to be a small buisness. We began in 2019 and have never looked back.
-</p><a href="bread.html">Order Now</a></article></div>
-  <h1>Our Story</h1>
-<p>In 2020, an 18 year old girl who fell in love with baking began making the strangest Cake Popsicles. Round ones! Circles ones! Ones with chocolate and vanilla and sprinkles! On a stick!. Nice... </p>
-
+<div class="topimg">Help us create the newest CakePops.<br>
+  <p>Kathy's Cakes is proud to be a small buisness. In 2020, an 18 year old girl who fell in love with baking began making the strangest Cake Popsicles. Round ones! Circles ones! Ones with chocolate and vanilla and sprinkles! On a stick!. Nice...
+</p>
+</div>
 
 </section>
+
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+
+    <h2>Welcome! Place order Here.</h2>
+    <p><div id="orderlink"><a href="bread.html">Order Now</a></div></p>
+  </div>
+  <div class="columntwo" style="background-color:#bbb;">
+    <h2>Follow Me on Instagram</h2>
+    <p><div id="instagram"><a href="https://www.instagram.com/kathys_cakesicles/"target="blank" class="fa fa-instagram"></a></div></p>
+  </div>
+</div>
+
+
+
+
+
 <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 2 seconds
+}
 
 function myFunction() {
   var x = document.getElementById("myTopnav");
