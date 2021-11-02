@@ -1,3 +1,14 @@
+
+<?php
+// Initialize the session
+session_start();
+
+// Check if the user is logged in, if not then redirect him to login page
+if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
+    header("location: other.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -21,11 +32,22 @@
 <section>
 <div class="topimg">Kathy's Cakes<br><article><p>
 
-Welcome to Kathy's Cakes! Come try our amazing cake popsicles. Here we create the fluffiest most colorful popsicles on a stick. We have three flavors to choose from.
-Chocoloate, vanilla, and marble.
+
 </p></article></div>
-<div class="imgorder"><a href="order.html">Order Now</a></div>
+
+
+<div class="wrapper">
+  <h1 class="my-5">Hi, <b><?php echo htmlspecialchars($_SESSION["username"]); ?></b><br> Welcome to your site.</h1>
+     <p>
+         <a href="reset-password.php" class="btn btn-warning">Reset Your Password</a>
+         <a href="logout.php" class="btn btn-danger ml-3">Sign Out of Your Account</a>
+     </p>
+   </div>
+
+
 </section>
+
+
 <script>
 
 function myFunction() {

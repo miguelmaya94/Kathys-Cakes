@@ -27,7 +27,7 @@
 <p>Price: $20.00
 <br>Please fill out the form to place an order</p>
 <div class="contain">
-  
+
       <form id="test_form" class="contact-form" name="test_form" method="POST" action="form.php" onsubmit="return validateForm(this)">
         <div class="first-name">
           <label for="firstname" class="label_input_wrap">First Name:</label>
@@ -39,7 +39,7 @@
             </div>
               <div class="email">
                   <label for="email" class="label_input_wrap">Amount:</label>
-                    <input type="number" name="req_email" id="email"
+                    <input type="number" name="req_email" id="email" max="6" value="6"
                     placeholder="Amount" />
                   </div>
                   <div class="telephone">
