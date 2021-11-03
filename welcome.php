@@ -24,6 +24,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <a href="index.html" class="active">Kathy's Cakes</a>
   <a href="order.html">Order Now</a>
   <a href="story.html">Our Story</a>
+    <a href="other.html">Login</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i class="fa fa-bars"></i>
   </a>

@@ -88,7 +88,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 }
 ?>
 
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -139,7 +138,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           <div class="form-group">
               <input type="submit" class="btn btn-primary" value="Login">
           </div>
-          <p>Don't have an account? <a href="register.php">Sign up now</a>.</p>
+          <h4>Don't have an account? <a href="register.php">Sign up now</a>.</h4>
       </form>
   </div>
 
