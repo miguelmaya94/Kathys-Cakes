@@ -1,67 +1,62 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <meta charset="utf-8">
+ <title>Kathy's Cakes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/mystyles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
   <nav>
 <div class="topnav" id="myTopnav">
   <a href="index.html" class="active">Kathy's Cakes</a>
   <a href="order.html">Order Now</a>
-    <a href="story.html">Our Story</a>
+  <a href="story.html">Our Story</a>
+    <a href="other.php">Login</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i class="fa fa-bars"></i>
   </a>
 </div>
 </nav>
-
 <section>
 <div class="topimg">Help us create the newest CakePops.<br>
   <p>Kathy's Cakes is proud to be a small business. In 2020, an 18 year old girl who fell in love with baking began making the strangest Cake Popsicles. Round ones! Circles ones! Ones with chocolate and vanilla and sprinkles! On a stick!. Nice...
 </p>
 </div>
 </section>
-
-<div class="show"
+<div class="show">
 <div class="slideshow-container">
-
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
   <img src="images/slideone.png" style="width:100%">
   <div class="text">Kathy's Cakes</div>
 </div>
-
 <div class="mySlides fade">
   <div class="numbertext">2 / 3</div>
   <img src="images/Screen Shot 2021-09-13 at 6.09.18 PM.png" style="width:100%">
   <div class="text">Kathy's Cakes</div>
 </div>
-
 <div class="mySlides fade">
   <div class="numbertext">3 / 3</div>
   <img src="images/slidethree.png" style="width:100%">
   <div class="text">Kathy's Cakes</div>
 </div>
-
 </div>
 </div>
 <br>
-
 <div style="text-align:center">
   <span class="dot"></span>
   <span class="dot"></span>
   <span class="dot"></span>
 </div>
+
 <div class="row">
   <div class="column" style="background-color:lightblue;">
-
     <h2>Welcome! Place order Here.</h2>
-    <p><div class="orderlink"><a href="bread.html" style="font-size:3rem;""text-decoration: none;">Order Now</a></div></p>
+    <p><div class="orderlink"><a href="order.html" style="font-size:3rem; color:red; text-decoration: none;">Order Now</a></div></p>
   </div>
   <div class="columntwo" style="background-color:skyblue;">
     <h2>Follow Me on Instagram</h2>
@@ -70,10 +65,13 @@
 </div>
 
 
+
+
+
+
 <script>
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -92,7 +90,6 @@ function showSlides() {
 }
 var slideIndex = 0;
 showSlides();
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -109,7 +106,6 @@ function showSlides() {
   dots[slideIndex-1].className += " active";
   setTimeout(showSlides, 4000); // Change image every 2 seconds
 }
-
 function myFunction() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {

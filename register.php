@@ -99,6 +99,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+  <meta charset="utf-8">
+ <title>Kathy's Cakes</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/mystyles.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -154,8 +156,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </script>
 
     <footer>
-      <div id= "div5">
-                \ All Copyrights Reserved 2020-21 Maya Multimedia LLC \ MILZEE12@AOL.COM</div>
+      <h4>Kathy's Cakes inc. /Maya Multimedia LLC</h4><br>
     </footer>
     </body>
     </html>
