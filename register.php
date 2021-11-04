@@ -109,15 +109,16 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 </head>
 <body>
   <nav>
-<div class="topnav" id="myTopnav">
+  <div class="topnav" id="myTopnav">
   <a href="index.html" class="active">Kathy's Cakes</a>
   <a href="order.html">Order Now</a>
   <a href="story.html">Our Story</a>
+    <a href="other.php">Login</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
   <i class="fa fa-bars"></i>
   </a>
-</div>
-</nav>
+  </div>
+  </nav>
     <div class="wrapper">
         <h2>Sign Up</h2>
         <p>Please fill this form to create an account.</p>
