@@ -18,7 +18,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.2rem;
 }
 .topnav a:hover {
   background-color: #ddd;
@@ -33,7 +33,6 @@ body {
 }
 .topimg{
   background-image: url('../images/gingerbread-1560711_1920.jpg');
-
   width: 100%;
   height: 300px;
   background-repeat: no-repeat;
@@ -43,15 +42,12 @@ color: white;
   text-emphasis: bold;
   background-size: cover;
   margin-top: 100px;
-
-
 }
 .topimg p{
 font-size: 1rem;
 max-width: 400px;
 color:white;
 background-color: rgba(0,0,0,0.55);
-
 }
 .imgorder a{
   background-image: url('../images/cake-pops-693646_1920.jpg');
@@ -64,9 +60,7 @@ background-color: rgba(0,0,0,0.55);
   font-size: 4.5rem;
   text-align: left;
   text-emphasis: bold;
-text-decoration: none;
 margin-bottom: 80px;
-
 text-decoration-line: none;
 }
 .imgstory a{
