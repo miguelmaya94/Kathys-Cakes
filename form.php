@@ -6,7 +6,7 @@ $form = new Form();
 $form->processForm(
 	'mayastudent.com' // Put you mail domain here
 	,
-	'Riverbelle' // Put your site name / form name here
+	'Kathys Cakes' // Put your site name / form name here
 	,
 	'miguel.maya88@yahoo.com' // Where will the form notification be sent?
 	,
