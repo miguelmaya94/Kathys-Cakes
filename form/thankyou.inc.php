@@ -95,9 +95,27 @@ footer {
 </nav>
   <div class="contain">
 <h1>Thank you for your order. </h1>
-<p>Thanks for your interest. We will be in contact shortly</p>
+<p>Thanks for your interest. We will be in contact shortly!</p>
 </div>
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+setInterval(myTimer, 1000);
+
+function myTimer() {
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+}
+
+</script>
 </body>
 <footer>
-  <h4>Kathy's Cakes inc. /Maya Multimedia LLC</h4><br>
+  <h4>Kathy's Cakes inc. /Maya Multimedia LLC/<p id="demo"></p></h4><br>
 </footer>

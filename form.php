@@ -4,13 +4,13 @@
 require('form/form.class.php');
 $form = new Form();
 $form->processForm(
-	'mayastudent.com' // Put you mail domain here
+	'kathycake.com' // Put you mail domain here
 	,
 	'Kathys Cakes' // Put your site name / form name here
 	,
 	'miguel.maya88@yahoo.com' // Where will the form notification be sent?
 	,
-	'forms@mayastudent.com' // This what the form FROM: address wil be, if the form submissions doesn't contain an email field
+	'forms@kathycake.com' // This what the form FROM: address wil be, if the form submissions doesn't contain an email field
 );
 ?>
 <!-- HTML bottom code goes here -->
