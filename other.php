@@ -141,7 +141,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
           <div class="form-group">
               <input type="submit" class="btn btn-primary" value="Login">
           </div>
-          <h4>Don't have an account? <a href="register.php">Sign up now</a>.</h4>
+          <h4>Don't have an account? <a href="register.php">Sign up now</a></h4>
       </form>
   </div>
 
@@ -166,7 +166,7 @@ function myTimer() {
 }
 </script>
 </body>
-<footer>
-  <h4>Kathy's Cakes inc. /Maya Multimedia LLC/<p id="demo"></p></h4><br>
+</body>
+<footer><h4>Kathy's Cakes inc. /Maya Multimedia LLC/<p id="demo"></p></h4><br>
 </footer>
 </html>
